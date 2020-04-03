@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="800px" height="800px"
+viewBox="-400 -400 800 800"
+preserveAspectRatio="xMidYMid">
+<defs>
+
+  <g id ="15gon" fill="white" stroke-width="1" stroke="black">
+    <polygon points="100,0,
+    91,-41,
+    67,-74,
+    31,-95,
+    -10,-99,
+    -50,-87,
+    -81,-59,
+    -98,-21,
+    -98,21,
+    -81,59,
+    -50,87,
+    -10,99,
+    31,95,
+    67,74,
+    91,41" />
+
+    <line x1 = "100" y1= "0" x2="0" y2="0"/>
+    <line x1 = "91" y1= "-41" x2="0" y2="0"/>
+    <line x1 = "67" y1= "-74" x2="0" y2="0"/>
+    <line x1 = "31" y1= "-95" x2="0" y2="0"/>
+    <line x1 = "-10" y1= "-99" x2="0" y2="0"/>
+    <line x1 = "-50" y1= "-87" x2="0" y2="0"/>
+    <line x1 = "-81" y1= "-59" x2="0" y2="0"/>
+    <line x1 = "-98" y1= "-21" x2="0" y2="0"/>
+    <line x1 = "-98" y1= "21" x2="0" y2="0"/>
+    <line x1 = "-81" y1= "59" x2="0" y2="0"/>
+    <line x1 = "-50" y1= "87" x2="0" y2="0"/>
+    <line x1 = "-10" y1= "99" x2="0" y2="0"/>
+    <line x1 = "31" y1= "95" x2="0" y2="0"/>
+    <line x1 = "67" y1= "74" x2="0" y2="0"/>
+    <line x1 = "91" y1= "41" x2="0" y2="0"/>
+
+    <animateTransform attributeName="transform" type="rotate" from="0 1 1" to="360 1 1 " dur="10s" repeatCount="indefinite" />
+  </g>
+
+  <g id="rect" fill="red">
+
+  </g>
+  <g id="bTr" fill="blue">
+    <polygon points="0,0 50,200 -50,200"/>
+  </g>
+  <g id="pTr" fill="purple">
+    <polygon points="0,0 50,200 -50,200"/>
+  </g>
+  <g id="gTr" fill="green">
+    <polygon points="0,0 50,200 -50,200"/>
+  </g>
+</defs>
+
+<use xlink:href="#15gon" transform="scale(0.6,0.6) translate(-150,-20) translate(-300,-400) scale(1,1)"/>
+<use xlink:href="#15gon" transform="scale(0.6,0.6) translate(150,20) translate(-300,-400) scale(1,1)"/>
+<line x1="-150" y1="-20" x2="150" y2="20" stroke-width="20" stroke="red" transform="scale(0.6,0.6) translate(-300,-400)"/>
+<use xlink:href="#pTr"transform="scale(0.6,0.6) translate(-300,-400) scale(1,1)"/>
+
+<use xlink:href="#15gon" transform="scale(0.7,0.7) translate(-150,-20) scale(1,1)"/>
+<use xlink:href="#15gon" transform="scale(0.7,0.7) translate(150,20) scale(1,1)"/>
+<line x1="-150" y1="-20" x2="150" y2="20" stroke-width="20" stroke="red" transform="scale(0.7,0.7)"/>
+<use xlink:href="#bTr"transform="scale(0.7,0.7) scale(1,1)"/>
+
+<use xlink:href="#15gon" transform="scale(0.4,0.4) translate(-150,-20) translate(300,-800) scale(1,1)"/>
+<use xlink:href="#15gon" transform="scale(0.4,0.4) translate(150,20) translate(300,-800) scale(1,1)"/>
+<line x1="-150" y1="-20" x2="150" y2="20" stroke-width="20" stroke="red" transform="scale(0.4,0.4) translate(300,-800)"/>
+<use xlink:href="#gTr"transform="scale(0.4,0.4) translate(300,-800) scale(1,1)"/>
+
+</svg>
